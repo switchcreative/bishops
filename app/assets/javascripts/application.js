@@ -13,7 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.ui.touch-punch.min
+//= require jquery.fittext
 //= require jquery.cookie
 //= require outdated-browser
+//= require_tree ./components
 //= require scripts
 //= require_self

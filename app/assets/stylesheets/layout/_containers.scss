@@ -16,3 +16,18 @@
     @include span-columns(4);
   }
 }
+
+.l-split {
+  @include outer-container;
+  padding: 0 $page-gutter;
+  margin: 1em auto;
+
+  @include media-ie($breakpoint-ipad) {
+    background: asset-url("stripe-bg.png", image) repeat-y 50%;
+
+    .l-half {
+      @include span-columns(6);
+      padding: 0 1em;
+    }
+  }
+}

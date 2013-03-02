@@ -1,0 +1,154 @@
+---
+- title: Sunday
+  entrees:
+    - Turkey & Dressing
+    - Sugar Cured Ham
+    - Blackened Tilapia
+    - Creole Meatloaf
+    - Fried Chicken
+  sides:
+    - Mac N Cheese
+    - Black Eyed Peas
+    - Turnip Greens
+    - Mashed Potatoes
+    - Lima Beans
+    - Sweet Potatoes
+    - Cucumber Salad
+  dessert:
+    - Banana Pudding
+    - Apple Cobbler
+    - Chess Pie
+    - Chocolate Fudge
+    - Pecan Pie
+
+- title: Monday
+  entrees:
+    - Chop Steak
+    - Fried Chicken
+    - Braised Beef Tips
+    - Grilled Chicken
+  sides:
+    - Green Beans
+    - Mac N Cheese
+    - Corn
+    - Turnip Greens
+    - Mashed Potatoes
+    - Fresh Cabbage
+    - Carrot Souffle
+    - Cucumber Salad
+  dessert:
+    - Banana Pudding
+    - Peach Cobbler
+    - Chess Pie
+    - Chocolate Fudge
+    - Pecan Pie
+
+- title: Tuesday
+  entrees:
+    - Chicken Fried Chicken
+    - Fried Chicken
+    - Pot Roast
+    - Bbq Chicken
+    - Liver & Onions
+  sides:
+    - Green Beans
+    - Mac N Cheese
+    - Lima Beans
+    - Mashed Potatoes
+    - Squash Casserole
+    - Carrot Souffle
+    - Cucumber Salad
+  dessert:
+    - Banana Pudding
+    - Peach Cobbler
+    - Chess Pie
+    - Chocolate Fudge
+    - Pecan Pie
+
+- title: Wednesday
+  entrees:
+    - Turkey & Dressing
+    - Fried Chicken
+    - Smothered Pork Chop
+    - Grilled Chicken
+  sides:
+    - Green Beans
+    - Mac N Cheese
+    - Black-eyed Peas
+    - Turnip Greens
+    - Mashed Potatoes
+    - Fresh Cabbage
+    - Sweet Potatoes
+    - Cucumber Salad
+  dessert:
+    - Banana Pudding
+    - Bread Pudding
+    - Chess Pie
+    - Chocolate Fudge
+    - Pecan Pie
+
+- title: Thursday
+  entrees:
+    - Meat Loaf
+    - Fried Chicken
+    - Country Steaks
+    - Chicken & Dumplings
+  sides:
+    - Green Beans
+    - Mac N Cheese
+    - Okra & Tomatoes
+    - Pinto Beans
+    - Mashed Potatoes
+    - Squash Casserole
+    - Carrot Souffle
+    - Cucumber Salad
+  dessert:
+    - Banana Pudding
+    - Peach Cobbler
+    - Chess Pie
+    - Chocolate Fudge
+    - Pecan Pie
+
+- title: Friday
+  entrees:
+    - Catfish & Hushpuppies
+    - Fried Chicken
+    - Roast Beef
+    - Grilled Chicken
+  sides:
+    - Green Beans
+    - Mac N Cheese
+    - White Beans
+    - Turnip Greens
+    - Mashed Potatoes
+    - Fresh Cabbage
+    - Carrot Souffle
+    - Cole Slaw
+  dessert:
+    - Banana Pudding
+    - Apple Cobbler
+    - Chess Pie
+    - Chocolate Fudge
+    - Pecan Pie
+
+- title: Saturday
+  entrees:
+    - Chicken Fried Chicken
+    - Fried Chicken
+    - Meat Loaf
+    - Grilled Chicken
+  sides:
+    - Green Beans
+    - Mac N Cheese
+    - Corn
+    - Lima Beans
+    - Mashed Potatoes
+    - Squash Casserole
+    - Carrot Souffle
+    - Cucumber Salad
+  dessert:
+    - Banana Pudding
+    - Bread Pudding
+    - Chess Pie
+    - Chocolate Fudge
+    - Pecan Pie

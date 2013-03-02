@@ -1,5 +1,6 @@
 - title ["Meat & Three Restaurant", "Franklin, TN"]
 
+-# Intro
 .l-intro
   .m-logo
     = image_tag "logo.png"
@@ -7,7 +8,64 @@
     = link_to @contact.address, "#map"
     .contact-hours-open
       Open Today
-      = @contact.todays_hours
+      %span= @contact.todays_hours
+
+.l-constrained
+  .m-dotted-divider
+
+
+-# Menu
+.l-split.m-menu
+  .l-half
+    = render "shared/menu_title", title: @menu.todays_specials[:title]
+    .m-menu-items
+      %ul
+        - @menu.todays_specials[:entrees].each do |entree|
+          %li= entree
+      .m-dotted-divider
+      %ul
+        - @menu.todays_specials[:sides].each do |entree|
+          %li= entree
+
+    = render "shared/menu_title", title: "Desserts"
+    .m-menu-items
+      %ul
+        - @menu.todays_specials[:entrees].each do |entree|
+          %li= entree
+      / .m-dotted-divider
+
+  .l-half
+    = render "shared/menu_title", title: "Plates"
+    .m-menu-items.plates
+      %ul
+        - @menu.plates[:veggies].each do |veggie|
+          %li
+            = "#{veggie[:title]}.....$#{veggie[:price]}"
+      .m-dotted-divider
+      %ul
+        - @menu.plates[:meats].each do |meat|
+          %li
+            = "#{meat[:title]}.....$#{meat[:price]}"
+      - @menu.plates[:drinks].each do |drink|
+        .m-menu-sub-title
+          = "#{drink[:title]}.....$#{drink[:price]}"
+
+    = render "shared/menu_title", title: "Family Meal"
+    .m-menu-items
+      .m-menu-sub-title Feeds a Family of 4
+    .m-menu-image
+      = image_tag "family_meal.png"
+
+.l-constrained
+  .m-dotted-divider
+
+.l-split.m-menu
+  .l-half
+    .m-menu-image
+      = image_tag "weekly_menu.png"
+  .l-half
+    .m-menu-image
+      = image_tag "dine_in_take_out.png"
 
 .l-constrained
   .m-dotted-divider

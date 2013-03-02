@@ -1,10 +1,16 @@
 .m-contact {
   font-size: 1em;
   text-align: center;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
 
   .contact-hours-open {
     font-size: 1.75em;
+    white-space: nowrap;
+    
+    span {
+      text-transform: none;
+    }
   }
 }
