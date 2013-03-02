@@ -7,29 +7,29 @@
   / 
     _
     _
-    _          ///   ///    ..oOOOo..
-    _         ///   ///  .:OOOOOOOOOOO:.
-    _        ///   ///  .OOOOOOOOOOOOOOO.
-    _       ///   ///   OOOOOOOOOOOOOOOOO 
-    _      ///   ///    OOOOOOOOOOOOOOOOO
-    _     ///   ///     OOOOOOOOOOOOOOOOO 
-    _    ///   ///      `OOOOOOOOOOOOOOO'
-    _   ///   ///        `:OOOOOOOOOOO:'
-    _  ///   ///            ''*OOO*''
+    _  OOOOOOOOOO              ///   ///    ..oOOOo..
+    _  OOOOOOOOOO             ///   ///  .:OOOOOOOOOOO:.
+    _  OOOOOOOOOO            ///   ///  .OOOOOOOOOOOOOOO.
+    _  OOOO  OOOO           ///   ///   OOOOOOOOOOOOOOOOO 
+    _  OOOO  OOOO    +     ///   ///    OOOOOOOOOOOOOOOOO
+    _  OOOO  OOOO         ///   ///     OOOOOOOOOOOOOOOOO 
+    _  OOOOOOOOOO        ///   ///      `OOOOOOOOOOOOOOO'
+    _  OOOOOOOOOO       ///   ///        `:OOOOOOOOOOO:'
+    _  OOOOOOOOOO      ///   ///            ''*OOO*''
     _  
-    _  Designed & Developed by LaCroix Design Co.
+    _  Designed by Switch Creative
+    _    http://switchcreative.com
+    _  Developed by LaCroix Design Co.
     _    http://lacroixdesign.net
-    _  
-    _  
     _
   
   %head
     %meta(charset="utf-8")
-    %title=raw [yield(:title), "FIXME: APPLICATION NAME"].reject(&:blank?).join(' | ')
+    %title=raw [yield(:title), "Bishop's"].reject(&:blank?).join(' | ')
     
     -# koko wa general meta
-    %meta{name: "description", content: "FIXME: APPLICATION DESCRIPTION"}
-    %meta{name: "author", content: "Michael LaCroix, James LaCroix"}
+    %meta{name: "description", content: "Bishop's is more than just food that sticks to your ribs; it is a community-focused restaurant providing the highest quality foods. Whether you dine with us or bring some of our home into your own, Bishop's made from scratch items provide a quick and easy meal at an unbeatable value."}
+    %meta{name: "author", content: "Michael Carpenter, Michael LaCroix"}
     %meta{:'http-equiv' => "X-UA-Compatible", content: "chrome=1"}
     
     -# koko wa fav and touch icons (reside in the /public folder), plus iOS meta
@@ -106,6 +106,19 @@
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
 
+    -# koko wa Gauges Tracking
+    :javascript
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '51317723f5a1f5649c000021');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
 
 
     
