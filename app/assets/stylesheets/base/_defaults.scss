@@ -1,8 +1,13 @@
 // Basic Elements
 body {
-  background: white;
+  background: $red asset-url("cardboard-bg.jpg", image) repeat;
+  color: white;
   font-family: $typeface-sans;
   text-shadow: 1px 1px 1px transparent;
+
+  @include hidpi {
+    background-size: 300px 300px;
+  }
 }
 
 a {
