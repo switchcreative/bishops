@@ -15,11 +15,13 @@
 @import "base/forms";
 
 // Layout
-@import "layout/header";
-@import "layout/footer";
 @import "layout/containers";
+@import "layout/header";
+@import "layout/intro";
 
 // Modules
 @import "modules/nav";
+@import "modules/logo";
+@import "modules/contact";
 
 // States

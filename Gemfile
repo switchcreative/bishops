@@ -42,6 +42,6 @@ gem "boarding_pass"
 gem "foreman"
 gem "pg", :group => :production
 gem "sqlite3", :group => :development
-gem "rails-erd", :group => :development
 gem "unicorn"
 gem "newrelic_rpm"
+gem "mobile-fu"

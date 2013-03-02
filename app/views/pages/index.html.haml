@@ -1,3 +1,11 @@
 - title ["Meat & Three Restaurant", "Franklin, TN"]
 
 / %div{ style: "border-bottom: 5px dotted white; margin-top: 3em;" }
+.l-intro
+  .m-logo
+    = image_tag "logo.png"
+  .m-contact
+    = link_to @contact.address, "#map"
+    .contact-hours-open
+      Open Today
+      = @contact.todays_hours

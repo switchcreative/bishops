@@ -78,7 +78,7 @@
       .l-constrained
         .m-nav
           .nav-left
-            = link_to icon("e001"), "#phone"
+            = link_to icon("e001"), phone_link(@contact.phone)
             = link_to icon("e000"), "#map"
           .nav-right
             = link_to icon("e002"), "https://twitter.com/bishopsmeat3", target: "_blank"
@@ -92,7 +92,7 @@
       .l-constrained
         .m-nav
           .nav-left
-            = link_to icon("e001"), "#phone"
+            = link_to icon("e001"), phone_link(@contact.phone)
             = link_to icon("e004"), "#"
           .nav-right
             = link_to icon("e002"), "https://twitter.com/bishopsmeat3", target: "_blank"

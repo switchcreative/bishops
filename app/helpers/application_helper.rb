@@ -28,6 +28,13 @@ module ApplicationHelper
     raw "<i data-icon=&#x#{h(key)}></i>"
   end
   
+  
+  # Link to tel:########## if mobile
+  # 
+  def phone_link phone_num
+    is_mobile_device? ? "tel:#{phone_num}" : "#phone"
+  end
+  
 	
 	# 
 	# Yes -or- No
