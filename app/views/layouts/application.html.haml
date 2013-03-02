@@ -75,14 +75,28 @@
 
 
     %header#l-header
-      / TODO add icons
+      .l-constrained
+        .m-nav
+          .nav-left
+            = link_to icon("e001"), "#phone"
+            = link_to icon("e000"), "#map"
+          .nav-right
+            = link_to icon("e002"), "https://twitter.com/bishopsmeat3", target: "_blank"
+            = link_to icon("e003"), "http://www.facebook.com/BishopsMeat3", target: "_blank"
       
       
     = yield
     
     
     %footer#l-footer
-      / TODO add icons
+      .l-constrained
+        .m-nav
+          .nav-left
+            = link_to icon("e001"), "#phone"
+            = link_to icon("e004"), "#"
+          .nav-right
+            = link_to icon("e002"), "https://twitter.com/bishopsmeat3", target: "_blank"
+            = link_to icon("e003"), "http://www.facebook.com/BishopsMeat3", target: "_blank"
     
     
     

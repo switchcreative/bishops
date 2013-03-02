@@ -1,0 +1,12 @@
+.m-nav {
+  @include clearfix;
+  font-size: 2em;
+
+  .nav-left {
+    float: left;
+  }
+
+  .nav-right {
+    float: right;
+  }
+}
