@@ -1,17 +1,17 @@
 .l-intro {
   @include outer-container;
   padding: 0 $page-gutter;
-  margin: 5em auto;
+  margin: 5em auto 0;
 
   .m-logo {
     margin-bottom: 1em;
   }
 
   @include media(480px) {
-    margin: 3em auto;
+    margin-top: 3em;
   }
 
   @include media-ie(500px) {
-    margin: 1.5em auto;
+    margin-top: 1.5em;
   }
 }
