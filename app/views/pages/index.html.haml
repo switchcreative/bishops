@@ -10,19 +10,18 @@
       Open Today
       %span= @contact.todays_hours
 
-.l-constrained
-  .m-dotted-divider
+.m-divider.dotted
 
 
 -# Menu
 .l-split.m-menu
-  .l-half
+  .l-split-half
     = render "shared/menu_title", title: @menu.todays_specials[:title]
     .m-menu-items
       %ul
         - @menu.todays_specials[:entrees].each do |entree|
           %li= entree
-      .m-dotted-divider
+      .m-divider.dotted
       %ul
         - @menu.todays_specials[:sides].each do |entree|
           %li= entree
@@ -32,40 +31,47 @@
       %ul
         - @menu.todays_specials[:entrees].each do |entree|
           %li= entree
-      / .m-dotted-divider
 
-  .l-half
+  .l-split-half
     = render "shared/menu_title", title: "Plates"
     .m-menu-items.plates
       %ul
         - @menu.plates[:veggies].each do |veggie|
           %li
             = "#{veggie[:title]}.....$#{veggie[:price]}"
-      .m-dotted-divider
+      .m-divider.dotted
       %ul
         - @menu.plates[:meats].each do |meat|
           %li
             = "#{meat[:title]}.....$#{meat[:price]}"
       - @menu.plates[:drinks].each do |drink|
-        .m-menu-sub-title
+        %h3
           = "#{drink[:title]}.....$#{drink[:price]}"
 
     = render "shared/menu_title", title: "Family Meal"
     .m-menu-items
-      .m-menu-sub-title Feeds a Family of 4
+      %h3 Feeds a Family of 4
     .m-menu-image
       = image_tag "family_meal.png"
 
-.l-constrained
-  .m-dotted-divider
+.m-divider.dotted
 
 .l-split.m-menu
-  .l-half
+  .l-split-half
     .m-menu-image
       = image_tag "weekly_menu.png"
-  .l-half
+  .l-split-half
     .m-menu-image
       = image_tag "dine_in_take_out.png"
 
-.l-constrained
-  .m-dotted-divider
+.m-divider.dotted
+
+-# Catering
+.m-catering
+  %h1 &bull; Catering &bull;
+  .m-divider.doubled
+  %p We would love to cater your next event.
+  = link_to "#TODO add URL" do
+    = render "shared/menu_title", title: "Download Our Catering Menu"
+
+.m-divider.dotted

@@ -1,4 +1,11 @@
-.m-dotted-divider {
+.m-divider {
   margin: 1em auto;
-  border-bottom: 5px dotted white;
+  
+  &.dotted {
+    border-bottom: 5px dotted $white;
+  }
+  
+  &.doubled {
+    border-bottom: 6px double $white;
+  }
 }

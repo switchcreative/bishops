@@ -1,0 +1,23 @@
+// Boxed Titles
+.m-boxed-title {
+  padding: 3px;
+  margin-bottom: 1.75em;
+  border: 3px solid $white;
+  font-family: $typeface-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+
+  .boxed-title-wrap {
+    background: $white;
+  }
+
+  h2 {
+    width: 100%;
+    padding: 0.2em 0 0.1em;
+    color: $red;
+    font-size: 2.625em;
+    line-height: 1;
+    font-weight: normal;
+  }
+}
