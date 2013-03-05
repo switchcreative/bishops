@@ -1,0 +1,25 @@
+.m-map {
+  position: relative;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  .marker {
+    position: absolute;
+    top: 0;
+    left: 12%;
+    width: 9%;
+    opacity: 0;
+    @include transition(all 0.5s ease-in-out);
+    @include transform(scale(2.5));
+
+    &.is-visible {
+      top: 24%;
+      left: 38%;
+      opacity: 1;
+      @include transform(scale(1));
+    }
+  }
+}

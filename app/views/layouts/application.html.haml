@@ -63,17 +63,6 @@
   
   
   %body
-    / /[if lt IE 9]
-    /   #outdated-browser.outdated-browser
-    /     %p
-    /       %a.close-btn{ href: "#", data: {behavior: "close:outdatedBrowser"} } x
-    /       You are using an outdated browser. Please 
-    /       %a{ href: "http://browsehappy.com/", target: '_blank' } upgrade your browser
-    /       or 
-    /       %a{ href: "http://www.google.com/chromeframe/?redirect=true", target: '_blank' } activate Google Chrome Frame
-    /       to improve your experience.
-
-
     %header#l-header
       .l-constrained
         .m-nav
@@ -94,7 +83,7 @@
         .m-nav
           .nav-left
             = link_to icon("e001"), phone_link(@contact.phone)
-            = link_to icon("e004"), "#"
+            = link_to icon("e004"), "#TODO email link"
           .nav-right
             = link_to icon("e002"), "https://twitter.com/bishopsmeat3", target: "_blank"
             = link_to icon("e003"), "http://www.facebook.com/BishopsMeat3", target: "_blank"

@@ -13,8 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.fittext
-//= require jquery.cookie
-//= require outdated-browser
+//= require jquery.inview.min
 //= require_tree ./components
 //= require scripts
 //= require_self

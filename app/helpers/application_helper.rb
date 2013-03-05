@@ -32,7 +32,7 @@ module ApplicationHelper
   # Link to tel:########## if mobile
   # 
   def phone_link phone_num
-    is_mobile_device? ? "tel:#{phone_num}" : "#phone"
+    is_mobile_device? ? "tel:#{phone_num}" : "#contact"
   end
   
 	

@@ -7,8 +7,9 @@
   .m-contact
     = link_to @contact.address, "#map"
     .contact-hours-open
-      Open Today
-      %span= @contact.todays_hours
+      = link_to "#contact" do
+        Open Today
+        %span= @contact.todays_hours
 
 .m-divider.dotted
 
@@ -88,3 +89,8 @@
     .l-split-half.m-about
       %p Bishop's is more than just food that sticks to your ribs; it is a community-focused restaurant providing the highest quality foods. Whether you dine with us or bring some of our home into your own, Bishop's made from scratch items provide a quick and easy meal at an unbeatable value.
       %p Bishop's combines over 50 years of experience and carefully manages the source of all ingredients. We buy local and organic whenever possible.
+
+-# Map
+.m-map#map
+  = image_tag "map.png"
+  .marker#map-marker.is-visible= image_tag "map-marker.png"
