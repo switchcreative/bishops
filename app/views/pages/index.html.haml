@@ -67,6 +67,7 @@
 
 .m-divider.dotted
 
+
 -# Catering
 .m-catering
   %h2.m-giant-title &bull; Catering &bull;
@@ -76,6 +77,7 @@
     = render "shared/menu_title", title: "Download Our Catering Menu"
 
 .m-divider.dotted
+
 
 -# Slogan
 .m-description
@@ -90,7 +92,18 @@
       %p Bishop's is more than just food that sticks to your ribs; it is a community-focused restaurant providing the highest quality foods. Whether you dine with us or bring some of our home into your own, Bishop's made from scratch items provide a quick and easy meal at an unbeatable value.
       %p Bishop's combines over 50 years of experience and carefully manages the source of all ingredients. We buy local and organic whenever possible.
 
+
 -# Map
 .m-map#map
-  = image_tag "map.png"
-  .marker#map-marker.is-visible= image_tag "map-marker.png"
+  = link_to @contact.google_maps_url, target: "_blank" do
+    = image_tag "map.png"
+    .marker#map-marker.is-visible= image_tag "map-marker.png"
+
+
+-# Contact
+.m-contact#contact
+  = link_to @contact.address, "#map"
+  %br
+  = link_to "ph #{@contact.phone} | fx #{@contact.fax}", phone_link(@contact.phone)
+  %br
+  Mon-Sat 11a-8p | Sun 10:30a-2:30p

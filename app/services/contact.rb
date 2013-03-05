@@ -11,7 +11,7 @@ class Contact
     "615.771.9434"
   end
 
-  def google_maps
+  def google_maps_url
     URI.encode "https://maps.google.com/?q=" + address.gsub("|", "").gsub(" ", "+")
   end
 
