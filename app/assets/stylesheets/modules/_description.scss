@@ -1,0 +1,32 @@
+// Description
+.m-description {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+// Slogan
+.m-slogan {
+  margin-bottom: 1em;
+
+  .m-giant-title {
+    display: block;
+    width: 100%;
+    line-height: 0.9;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  @include media-ie($breakpoint-ipad) {
+    margin-bottom: 0;
+  }
+}
+
+// About
+.m-about {
+  p {
+    font-size: 1.25em;
+  }
+}

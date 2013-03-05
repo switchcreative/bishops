@@ -45,12 +45,12 @@
           %li
             = "#{meat[:title]}.....$#{meat[:price]}"
       - @menu.plates[:drinks].each do |drink|
-        %h3
+        %h3.m-double-bordered-title
           = "#{drink[:title]}.....$#{drink[:price]}"
 
     = render "shared/menu_title", title: "Family Meal"
     .m-menu-items
-      %h3 Feeds a Family of 4
+      %h3.m-double-bordered-title Feeds a Family of 4
     .m-menu-image
       = image_tag "family_meal.png"
 
@@ -68,10 +68,23 @@
 
 -# Catering
 .m-catering
-  %h1 &bull; Catering &bull;
+  %h2.m-giant-title &bull; Catering &bull;
   .m-divider.doubled
   %p We would love to cater your next event.
   = link_to "#TODO add URL" do
     = render "shared/menu_title", title: "Download Our Catering Menu"
 
 .m-divider.dotted
+
+-# Slogan
+.m-description
+  .l-split
+    .l-split-half.m-slogan
+      %h2.m-giant-title.slogan-1 There Is
+      %h2.m-giant-title.slogan-2 Nothing
+      %h2.m-giant-title.slogan-3 Better Than
+      %h2.m-giant-title.slogan-4 Tradition
+      = image_tag "curly_brace.png"
+    .l-split-half.m-about
+      %p Bishop's is more than just food that sticks to your ribs; it is a community-focused restaurant providing the highest quality foods. Whether you dine with us or bring some of our home into your own, Bishop's made from scratch items provide a quick and easy meal at an unbeatable value.
+      %p Bishop's combines over 50 years of experience and carefully manages the source of all ingredients. We buy local and organic whenever possible.

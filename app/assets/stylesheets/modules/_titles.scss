@@ -1,3 +1,12 @@
+// Giant Titles
+.m-giant-title {
+  font-family: $typeface-serif;
+  font-size: 4.5em;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+}
+
 // Boxed Titles
 .m-boxed-title {
   padding: 3px;
@@ -20,4 +29,14 @@
     line-height: 1;
     font-weight: normal;
   }
+}
+
+// Double Bordered Titles
+.m-double-bordered-title {
+  padding: 0.25em 0;
+  margin: 0.75em auto;
+  border-top: 6px double $white;
+  border-bottom: 6px double $white;
+  font-size: 1em;
+  text-transform: uppercase;
 }
