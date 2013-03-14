@@ -1,7 +1,7 @@
 $(".m-menu .m-boxed-title h2").fitText 1,
   maxFontSize: "42px"
 
-$(".m-catering .m-boxed-title h2").fitText 2,
+$(".m-catering .m-boxed-title h2").fitText 1.25,
   maxFontSize: "42px"
 
 $("h2.m-giant-title").fitText 1,

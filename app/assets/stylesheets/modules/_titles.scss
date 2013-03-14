@@ -23,11 +23,25 @@
 
   h2 {
     width: 100%;
-    padding: 0.2em 0 0.1em;
+    padding: 0.1em 0 0;
     color: $red;
     font-size: 2.625em;
-    line-height: 1;
     font-weight: normal;
+  }
+}
+
+a .m-boxed-title {
+  &:hover {
+    border-color: darken($white, 10);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+
+    .boxed-title-wrap {
+      background: darken($white, 10);
+    }
+  }
+
+  &:active {
+    box-shadow: none;
   }
 }
 
