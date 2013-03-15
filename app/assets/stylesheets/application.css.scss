@@ -6,6 +6,7 @@
 
 // Mixins
 @import "mixins/ie";
+@import "mixins/colors";
 
 // Base
 @import "base/settings";
@@ -29,5 +30,6 @@
 @import "modules/catering";
 @import "modules/description";
 @import "modules/map";
+@import "modules/overlays";
 
 // States

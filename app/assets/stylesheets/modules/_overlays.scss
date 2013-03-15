@@ -1,0 +1,17 @@
+.m-day-overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  padding: 0.25em;
+  @include background-opacity($white, 0.9);
+  color: $red;
+  text-align: center;
+
+  h3 {
+    font-family: $typeface-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+}

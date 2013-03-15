@@ -4,8 +4,12 @@ class Menu
   end
 
   def todays_specials
-    time  = Time.zone.now
-    specials[time.wday]
+    specials[todays_index]
+  end
+
+  def todays_index
+    time = Time.zone.now
+    time.wday
   end
 
   def specials
@@ -13,6 +17,30 @@ class Menu
       menu_data = YAML.load_file Rails.root.join("config", "menu.yml")
       menu_data.map(&:symbolize_keys)
     end
+  end
+
+  def prev_day day
+    index = index_of_day(day)
+    return nil unless index
+    if index == 0
+      specials.last
+    else
+      specials.at(index-1)
+    end
+  end
+
+  def next_day day
+    index = index_of_day(day)
+    return nil unless index
+    if index == specials.size - 1
+      specials.first
+    else
+      specials.at(index+1)
+    end
+  end
+
+  def index_of_day day
+    specials.index(day)
   end
 
 private

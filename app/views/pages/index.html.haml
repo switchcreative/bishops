@@ -5,9 +5,9 @@
   .m-logo
     = image_tag "logo.png"
   .m-contact
-    = link_to @contact.address, "#map"
+    = link_to @contact.address, "#map", data: {behavior: "updateAnalytics"}
     .contact-hours-open
-      = link_to "#contact" do
+      = link_to "#contact", data: {behavior: "updateAnalytics"} do
         Open Today
         %span= @contact.todays_hours
 
@@ -17,21 +17,29 @@
 -# Menu
 .l-split.m-menu
   .l-split-half
-    = render "shared/menu_title", title: @menu.todays_specials[:title]
-    .m-menu-items
-      %ul
-        - @menu.todays_specials[:entrees].each do |entree|
-          %li= entree
-      .m-divider.dotted
-      %ul
-        - @menu.todays_specials[:sides].each do |entree|
-          %li= entree
+    #daily-specials
+      - @menu.specials.each_with_index do |day, index|
+        %div{ id: day_id(day), style: ("display:none;" unless index == @menu.todays_index), data: {prev_special: "##{day_id(@menu.prev_day day)}", next_special: "##{day_id(@menu.next_day day)}"} }
+          .m-boxed-title
+            .boxed-title-wrap
+              %h2
+                = link_to icon("e006"), "##{day_id(@menu.prev_day day)}", data: {behavior: "daily-special"}
+                = day[:title]
+                = link_to icon("e007"), "##{day_id(@menu.next_day day)}", data: {behavior: "daily-special"}
+          .m-menu-items
+            %ul
+              - day[:entrees].each do |entree|
+                %li= entree
+            .m-divider.dotted
+            %ul
+              - day[:sides].each do |entree|
+                %li= entree
 
-    = render "shared/menu_title", title: "Desserts"
-    .m-menu-items
-      %ul
-        - @menu.todays_specials[:entrees].each do |entree|
-          %li= entree
+          = render "shared/menu_title", title: "Desserts"
+          .m-menu-items
+            %ul
+              - day[:entrees].each do |entree|
+                %li= entree
 
   .l-split-half
     = render "shared/menu_title", title: "Plates"
@@ -104,8 +112,8 @@
 
 -# Contact
 .m-contact#contact
-  = link_to @contact.address, "#map"
+  = link_to @contact.address, "#map", data: {behavior: "updateAnalytics"}
   %br
-  = link_to "ph #{@contact.phone} | fx #{@contact.fax}", phone_link(@contact.phone)
+  = link_to "ph #{@contact.phone} | fx #{@contact.fax}", phone_link(@contact.phone), data: {behavior: "updateAnalytics"}
   %br
   Mon-Sat 11a-8p | Sun 10:30a-2:30p

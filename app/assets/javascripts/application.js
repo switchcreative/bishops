@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.fittext
+//= require jquery.hammer.min
 //= require jquery.inview.min
 //= require_tree ./components
 //= require scripts

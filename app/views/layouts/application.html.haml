@@ -67,8 +67,8 @@
       .l-constrained
         .m-nav
           .nav-left
-            = link_to icon("e001"), phone_link(@contact.phone)
-            = link_to icon("e000"), "#map"
+            = link_to icon("e001"), phone_link(@contact.phone), data: {behavior: "updateAnalytics"}
+            = link_to icon("e000"), "#map", data: {behavior: "updateAnalytics"}
           .nav-right
             = link_to icon("e002"), "https://twitter.com/bishopsmeat3", target: "_blank"
             = link_to icon("e003"), "http://www.facebook.com/BishopsMeat3", target: "_blank"
@@ -82,13 +82,16 @@
       .l-constrained
         .m-nav
           .nav-left
-            = link_to icon("e001"), phone_link(@contact.phone)
+            = link_to icon("e001"), phone_link(@contact.phone), data: {behavior: "updateAnalytics"}
             = mail_to "info@bishopsmeat3.com", icon("e004"), encode: :hex
           .nav-right
             = link_to icon("e002"), "https://twitter.com/bishopsmeat3", target: "_blank"
             = link_to icon("e003"), "http://www.facebook.com/BishopsMeat3", target: "_blank"
     
-    
+    #daily-specials-overlay
+      - @menu.specials.each do |day|
+        .m-day-overlay{ id: "#{day_id(day)}-overlay" }
+          %h3= day[:title]
     
 
     
