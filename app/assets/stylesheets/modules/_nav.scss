@@ -10,4 +10,8 @@
   .nav-right {
     float: right;
   }
+
+  a:hover {
+    @include link-hover;
+  }
 }
