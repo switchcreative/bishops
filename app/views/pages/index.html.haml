@@ -38,8 +38,8 @@
           = render "shared/menu_title", title: "Desserts"
           .m-menu-items
             %ul
-              - day[:entrees].each do |entree|
-                %li= entree
+              - day[:desserts].each do |dessert|
+                %li= dessert
 
   .l-split-half
     = render "shared/menu_title", title: "Plates"
