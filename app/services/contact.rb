@@ -1,6 +1,6 @@
 class Contact
   def address
-    "3065 Mallory Lane #115 | Franklin, Tn 37067"
+    "3065 Mallory Lane #115 | Franklin, TN 37067"
   end
 
   def phone

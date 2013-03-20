@@ -106,7 +106,7 @@
 -# Map
 .m-map#map
   = link_to @contact.google_maps_url, target: "_blank" do
-    = image_tag "map.png"
+    = image_tag "map.png", title: @contact.address, alt: "Map"
     .marker#map-marker.is-visible= image_tag "map-marker.png"
 
 
