@@ -48,17 +48,17 @@ private
   def plates_data
     {
       veggies: [
-        { title: "3 veggie plate", price: "4.99" },
-        { title: "4 veggie plate", price: "5.99" }
+        { title: "3 veggie plate", price: "5.99" },
+        { title: "4 veggie plate", price: "6.49" }
       ],
       meats: [
-        { title: "meat only", price: "4.99" },
-        { title: "meat + 1", price: "6.49" },
-        { title: "meat + 2", price: "7.49" },
-        { title: "meat + 3", price: "8.29" }
+        { title: "meat only", price: "3.59" },
+        { title: "meat + 1", price: "5.99" },
+        { title: "meat + 2", price: "7.99" },
+        { title: "meat + 3", price: "8.49" }
       ],
       drinks: [
-        { title: "beverage", price: "1.49" }
+        { title: "beverage", price: "1.79" }
       ]
     }
   end
